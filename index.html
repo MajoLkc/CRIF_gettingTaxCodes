@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margo | Get tax codes</title>
+  <link rel="stylesheet" href="css-reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Tax codes generator</h1>
+    <p>This app is created for generating tax codes for  API call:<br>
+      <a href="http://ccomapp05.icc.crifnet.com:5522/swagger/index.html" target="_blank">PUT/api/enriched-entities/remove-enrichment <span>></span></a>
+    </p>
+    <input type="checkbox" id="for-excel">
+    <label for="for-excel">Select this if you want to create tax codes for upload excel file from UI</label>
+    <select name="environment" id="environment">
+      <option value="" disabled selected>Select environment</option>
+      <option value="ui">Margò UI</option>
+      <option value="excel">Excel</option>
+    </select>
+    <p id="info"></p>
+    <textarea id="rawData" placeholder="Insert here copied UI companies/excel tax codes whole column"></textarea>
+    <button id="start">Get VAT/TAX codes</button>
+    <textarea id="output" placeholder="Here you will received array with tax codes for API request"></textarea>
+    <button id="copy">Copy all codes</button>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

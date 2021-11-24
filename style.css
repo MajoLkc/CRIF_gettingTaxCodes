@@ -1,0 +1,86 @@
+body {
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  width: 1024px;
+  min-height: 300px;
+  margin: auto;
+  background-color: white;
+}
+
+.container h1 {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 20px 20px;
+  font-family: Comfortaa, cursive;
+  color: #003C7D;
+}
+
+.container p {
+  font-size: 16px;
+  margin: 20px 20px;
+  line-height: 1.33;
+  font-weight: normal;
+  color: rgb(80, 80, 80);
+}
+
+.container a {
+  text-decoration: none;
+  color: #003C7D;
+}
+
+.container a span{
+  font-weight: bold;
+}
+
+.container select {
+  background-color: #F1F5F8;
+  color: #003C7D;
+  border: 0px;
+  margin: 25px auto;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.container textarea {
+  width: 95%;
+  height: 250px;
+  margin: 10px auto;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 11px;
+  line-height: 1.71;
+  font-size: 14px;
+  font-family: Lato, sans-serif;
+  background-color: #F1F5F8;
+  resize: none;
+}
+
+.container textarea:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  transition: 0.7s;
+}
+
+.container button {
+  line-height: 1.71;
+  margin: 25px auto;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: block;
+  background-color: #003C7D;
+  color: white;
+  cursor: pointer;
+}
+
+#copy {
+  margin-right: 15px;
+}
